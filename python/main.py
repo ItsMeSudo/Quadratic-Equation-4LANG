@@ -1,8 +1,8 @@
 import math
 
-a_val = int(input("Add meg az A értékét: "))
-b_val = int(input("Add meg az B értékét: "))
-c_val = int(input("Add meg az C értékét: "))
+a_val = float(input("Add meg az A értékét: "))
+b_val = float(input("Add meg az B értékét: "))
+c_val = float(input("Add meg az C értékét: "))
 
 print("A értéke: " + str(a_val) + ", B értéke: " + str(b_val) + ", C értéke: " + str(c_val))
 diszkriminans = ((b_val*b_val)-(4*a_val*c_val))

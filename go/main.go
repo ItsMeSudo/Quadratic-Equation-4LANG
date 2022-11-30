@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
+	calculate()
+}
+
+func calculate() {
 	var a_val float64
 	var b_val float64
 	var c_val float64
@@ -39,6 +43,14 @@ func main() {
 	fmt.Printf("X1 értéke: %v\n", result_1)
 	fmt.Printf("X2 értéke: %v\n", result_2)
 
-	fmt.Printf("SUDO#0814 2022")
+	fmt.Printf("SUDO#0814 2022\n")
 
+	fmt.Printf("A kilépéshez írd be hogy 'exit' vagy az új számolás kezdéséhez azt hogy 'uj'\n")
+	var exit string
+	fmt.Scanln(&exit)
+	if exit == "exit" {
+		return
+	} else if exit == "uj" {
+		calculate()
+	}
 }
